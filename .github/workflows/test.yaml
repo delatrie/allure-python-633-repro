@@ -1,4 +1,4 @@
-name: "test #allure-pytest/636"
+name: "Test #allure-pytest/636"
 
 on: workflow_dispatch
 
