@@ -6,7 +6,7 @@ jobs:
   test:
     name: Test reproduction of issue 636
     strategy:
-      fail-fast: true
+      fail-fast: false
       matrix:
         os: ["ubuntu-latest", "windows-latest"]
     runs-on: ${{ matrix.os }}
@@ -26,6 +26,7 @@ jobs:
 
       - name: "Run pytest-bdd with allure"
         run: pytest -m cucumber -W ignore --alluredir allure-results
+        continue-on-error: true
 
       - name: Show result files
         run: cat ./allure-results/*-result.json
