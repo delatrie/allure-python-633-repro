@@ -1,0 +1,76 @@
+{
+    "name": "Cucumber [6-2-2-1]",
+    "status": "failed",
+    "statusDetails": {
+        "message": "AssertionError: assert (6 - 4) == 1",
+        "trace": "request = <FixtureRequest for <Function test_cucumber[6-2-2-1]>>, _pytest_bdd_example = {'A': '6', 'B': '2', 'C': '2', 'D': '1'}\n\n    @pytest.mark.usefixtures(*func_args)\n    def scenario_wrapper(request: FixtureRequest, _pytest_bdd_example: dict[str, str]) -> Any:\n        scenario = templated_scenario.render(_pytest_bdd_example)\n>       _execute_scenario(feature, scenario, request)\n\n..\\..\\Software\\Software\\Python\\lib\\site-packages\\pytest_bdd\\scenario.py:184: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n..\\..\\Software\\Software\\Python\\lib\\site-packages\\pytest_bdd\\scenario.py:154: in _execute_scenario\n    _execute_step_function(request, scenario, step, step_func)\n..\\..\\Software\\Software\\Python\\lib\\site-packages\\pytest_bdd\\scenario.py:124: in _execute_step_function\n    return_value = call_fixture_func(fixturefunc=step_func, request=request, kwargs=kwargs)\n..\\..\\Software\\Software\\Python\\lib\\site-packages\\_pytest\\fixtures.py:924: in call_fixture_func\n    fixture_result = fixturefunc(**kwargs)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncucumbers = {'eat': 4, 'start': 6}, left = 1\n\n    @then(parsers.parse(\"I should have {left:d} cucumbers\"))\n    def should_have_left_cucumbers(cucumbers, left):\n>       assert cucumbers[\"start\"] - cucumbers[\"eat\"] == left\nE       assert (6 - 4) == 1\n\nmicroservices\\scripts\\test_cucumber.py:19: AssertionError"
+    },
+    "steps": [
+        {
+            "name": "Given there are 6 cucumbers",
+            "status": "passed",
+            "start": 1677875607680,
+            "stop": 1677875607680
+        },
+        {
+            "name": "When I eat 2 cucumbers",
+            "status": "passed",
+            "start": 1677875607680,
+            "stop": 1677875607680
+        },
+        {
+            "name": "And I eat 2 cucumbers",
+            "status": "passed",
+            "start": 1677875607680,
+            "stop": 1677875607680
+        },
+        {
+            "name": "Then I should have 1 cucumbers",
+            "status": "failed",
+            "statusDetails": {
+                "message": "assert (6 - 4) == 1",
+                "trace": "AssertionError: assert (6 - 4) == 1\n"
+            },
+            "start": 1677875607680,
+            "stop": 1677875607681
+        }
+    ],
+    "parameters": [
+        {
+            "name": "_pytest_bdd_example",
+            "value": {
+                "A": "6",
+                "B": "2",
+                "C": "2",
+                "D": "1"
+            }
+        }
+    ],
+    "start": 1677875607679,
+    "stop": 1677875607681,
+    "uuid": "38fa9c14-42c8-d333-84e3-af92f857f939",
+    "historyId": "38fa9c1442c8d33384e3af92f857f939",
+    "fullName": "feature\\Test.feature:Cucumber",
+    "labels": [
+        {
+            "name": "host",
+            "value": "RSG-Ms5F1E7obW6"
+        },
+        {
+            "name": "thread",
+            "value": "15508-MainThread"
+        },
+        {
+            "name": "framework",
+            "value": "pytest-bdd"
+        },
+        {
+            "name": "language",
+            "value": "cpython3"
+        },
+        {
+            "name": "feature",
+            "value": "Step arguments"
+        }
+    ]
+}

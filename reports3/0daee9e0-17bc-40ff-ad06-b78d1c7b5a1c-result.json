@@ -1,0 +1,68 @@
+{
+    "name": "Cucumber [5-3-2-0]",
+    "status": "passed",
+    "steps": [
+        {
+            "name": "Given there are 5 cucumbers",
+            "status": "passed",
+            "start": 1677875607508,
+            "stop": 1677875607508
+        },
+        {
+            "name": "When I eat 3 cucumbers",
+            "status": "passed",
+            "start": 1677875607509,
+            "stop": 1677875607509
+        },
+        {
+            "name": "And I eat 2 cucumbers",
+            "status": "passed",
+            "start": 1677875607509,
+            "stop": 1677875607510
+        },
+        {
+            "name": "Then I should have 0 cucumbers",
+            "status": "passed",
+            "start": 1677875607510,
+            "stop": 1677875607510
+        }
+    ],
+    "parameters": [
+        {
+            "name": "_pytest_bdd_example",
+            "value": {
+                "A": "5",
+                "B": "3",
+                "C": "2",
+                "D": "0"
+            }
+        }
+    ],
+    "start": 1677875607506,
+    "stop": 1677875607510,
+    "uuid": "4dee33ab-c3ee-7c98-0cde-9fa69d3e32b4",
+    "historyId": "4dee33abc3ee7c980cde9fa69d3e32b4",
+    "fullName": "feature\\Test.feature:Cucumber",
+    "labels": [
+        {
+            "name": "host",
+            "value": "RSG-Ms5F1E7obW6"
+        },
+        {
+            "name": "thread",
+            "value": "15508-MainThread"
+        },
+        {
+            "name": "framework",
+            "value": "pytest-bdd"
+        },
+        {
+            "name": "language",
+            "value": "cpython3"
+        },
+        {
+            "name": "feature",
+            "value": "Step arguments"
+        }
+    ]
+}
